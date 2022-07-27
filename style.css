@@ -2,12 +2,11 @@
     Class:     CIS130W01
     Name:      Kari Cook
     Date:      07-25-2022  */
-/* body container styles */
+/* Styles for all html */
 body {
   background-color: #A0E494;
 }
 
-/* Footer styles */
 footer {
   font-size: 1.5rem;
   color: lightgreen;
@@ -16,4 +15,110 @@ footer {
   background-color: black;
   padding: 20px;
   margin-top: 20px;
+}
+
+/* skill only styles */
+.carousel {
+  margin-top: 20px;
+}
+
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  grid-template-areas:
+     'top'
+     'bottom';
+}
+
+.top {
+  grid-area: top;
+  align-content: center;
+  background-color: #3f8529;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #293f22;
+}
+.bottom {
+  background-color: #3f8529;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px #293f22;
+}
+.exampleimg {
+  max-width: 100%;
+  border-radius: 5px;
+  display:none;
+}
+.examplecss {
+  display: none;
+  border-radius: 5px;
+}
+h3 {
+  display: none;
+}
+ h4 {
+  display: none;
+}
+.embed {
+  display: grid;
+  grid-gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.map-med {
+  display: none;
+}
+/* skill responsive styles */
+ @media (min-width: 700px){
+   .box2 {
+     grid-area: box2;
+   }
+   .box3 {
+     grid-area: box3;
+   }
+   .box4 {
+     grid-area: box4;
+   }
+   .boxes {
+      grid-template-areas:
+        'top top'
+        'box2 box3'
+        'box4 box4';
+   }
+   .exampleimg {
+     display: block;
+   }
+   h3 {
+     display: block;
+   }
+   .map-med {
+     display: grid;
+   }
+   .map-sm {
+     display: none;
+   }
+}
+@media (min-width: 1060px){
+  .boxes {
+     grid-template-areas:
+       'top top box2'
+       'top top box3'
+       'box4 box4 box3';
+  }
+   h4 {
+    display: block;
+  }
+  .examplecss {
+    display: block;
+  }
+  .exampleimg {
+    display: block;
+    margin-top: 40px;
+  }
+  .embed {
+    grid-template-areas:
+       'map video';
+  }
 }
