@@ -2,7 +2,18 @@
     Class:     CIS130W01
     Name:      Kari Cook
     Date:      07-25-2022  */
-
+/* body container styles */
 body {
   background-color: #A0E494;
+}
+
+/* Footer styles */
+footer {
+  font-size: 1.5rem;
+  color: lightgreen;
+  text-shadow: 1px 1px green;
+  text-align: center;
+  background-color: black;
+  padding: 20px;
+  margin-top: 20px;
 }
