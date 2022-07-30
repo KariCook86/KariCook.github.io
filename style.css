@@ -25,39 +25,71 @@ footer {
   margin-top: 20px;
 }
 
+/* index.html only styles */
+.wrapping {
+  display: grid;
+  grid-gap: 20px;
+}
+.inner {
+  margin: 20px;
+  background-color: #3f8529;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 5px #293f22;
+}
+.inner img {
+  max-width: 400px;
+  border-radius: 5px;
+  border: white solid 5px;
+  box-shadow: 0 2px 5px #293f22;
+  margin-bottom: 10px;
+}
+.inner p {
+  font-size: 1.2em;
+  padding: 5px;
+}
+.mid1 {
+  border: darkgreen double 5px;
+}
+/* Breakpoint styles for index.html only */
+@media (min-width: 1060px) {
+  .wrapping {
+    grid-template-areas:
+    'topper topper'
+    'lower  mid2'
+    'mid1 mid1';
+  }
+  .topper {
+    grid-area: topper;
+  }
+  .mid1 {
+    grid-area: mid1;
+  }
+  .mid2 {
+    grid-area: mid2;
+  }
+  .lower {
+    grid-area: lower;
+  }
+  .logo {
+    margin-top: 100px;
+  }
+
+}
+
 /* more.html only styles */
 .wrap {
   display: grid;
   grid-gap: 20px;
 }
-.head1 {
-  margin: 20px;
-  background-color:  #3f8529;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #293f22;
-  padding: 5px;
-}
-.side1 {
-  margin: 20px;
-  background-color:  #3f8529;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #293f22;
-  padding: 5px;
-}
-.side2 {
-  margin: 20px;
-  background-color:  #3f8529;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px #293f22;
-  padding: 5px;
-}
-.bottom1 {
+.inside {
   margin: 20px;
   background-color: #3f8529;
   border-radius: 5px;
   box-shadow: 0 2px 5px #293f22;
   padding: 5px;
 }
+
 .wrap img {
   max-width: 400px;
   box-shadow: 0 2px 5px #293f22;
